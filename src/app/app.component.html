@@ -1,0 +1,27 @@
+
+<router-outlet></router-outlet>
+
+<div class="contenedor">
+  <h1 class = "tituloPagina">{{title}}</h1>
+  <br>
+  <div>
+    <br>
+    <input type="number" class="form-control" placeholder="Ingrese la edad 1" [(ngModel)]="edad1">
+    <br>
+    <input type="number" class="form-control" placeholder="Ingrese la edad 2" [(ngModel)]="edad2">
+    <br><br><br>
+    <div class="row mt-2 text-center container">
+      <label class="titulo">Suma de las Edades : {{verSuma}}</label>
+      <br>
+      <label class="titulo">Promedio de las Edades : {{verPromedio}}</label>
+    </div>
+    <br><br>
+    <div class="row mt-3">
+      <div class="col-12 text-center container">
+        <button type="button" class="btn btn-primary boton1" (click)=SumaEdades()>Suma </button>
+        <button type="button" class="btn btn-secondary boton2" (click)=PromedioEdades()>Promedio </button>
+        <button type="button" class="btn btn-success boton3" (click)=Limpiar()>Limpiar</button>
+      </div>
+    </div>
+  </div>
+</div>
